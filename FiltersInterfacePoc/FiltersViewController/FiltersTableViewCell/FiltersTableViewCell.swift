@@ -10,17 +10,18 @@ import UIKit
 
 final class FiltersTableViewCell: UITableViewCell {
     // MARK: - Properties
+    private let minimumSpacing: CGFloat = 8
 //    private let sizes: [Int] = [34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48]
 //    private let sizes: [String] = ["Acessórios", "Marcas", "Camisetas", "Bermudas", "Blusas", "Bermudas"]
     private let sizes: [String] = ["Menos de R$ 50", "R$ 50 - R$ 90", "R$ 90 - 140", "R$ 140 - R$ 220", "R$ 220 - R$ 300", "R$ 300 - R$ 350", "R$ 350 - R$ 400"]
+    
     
     // MARK: - UI Components
     private lazy var collectionView: UICollectionView = {
         let collectionViewLayout = UICollectionViewFlowLayout()
             collectionViewLayout.scrollDirection = .vertical
-            collectionViewLayout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-            collectionViewLayout.minimumInteritemSpacing = 8
-            collectionViewLayout.minimumLineSpacing = 8
+            collectionViewLayout.minimumInteritemSpacing = minimumSpacing
+            collectionViewLayout.minimumLineSpacing = minimumSpacing
             collectionViewLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout)
