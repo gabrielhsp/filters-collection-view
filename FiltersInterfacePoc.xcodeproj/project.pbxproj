@@ -18,6 +18,7 @@
 		53733F21242267C000B7072D /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53733F20242267C000B7072D /* ViewCode.swift */; };
 		53733F242422979400B7072D /* FiltersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53733F232422979400B7072D /* FiltersCollectionViewCell.swift */; };
 		53733F272422B1EF00B7072D /* FiltersHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53733F262422B1EF00B7072D /* FiltersHeaderFooterView.swift */; };
+		53861B0E242412B500B7BA25 /* CustomViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53861B0D242412B500B7BA25 /* CustomViewFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		53733F20242267C000B7072D /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
 		53733F232422979400B7072D /* FiltersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersCollectionViewCell.swift; sourceTree = "<group>"; };
 		53733F262422B1EF00B7072D /* FiltersHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersHeaderFooterView.swift; sourceTree = "<group>"; };
+		53861B0D242412B500B7BA25 /* CustomViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		53733F052422597000B7072D /* FiltersInterfacePoc */ = {
 			isa = PBXGroup;
 			children = (
+				53861B0C242412A900B7BA25 /* Helpers */,
 				53733F1A24225A9100B7072D /* FiltersViewController */,
 				53733F062422597000B7072D /* AppDelegate.swift */,
 				53733F082422597000B7072D /* SceneDelegate.swift */,
@@ -112,6 +115,14 @@
 				53733F262422B1EF00B7072D /* FiltersHeaderFooterView.swift */,
 			);
 			path = FiltersHeaderFooterView;
+			sourceTree = "<group>";
+		};
+		53861B0C242412A900B7BA25 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				53861B0D242412B500B7BA25 /* CustomViewFlowLayout.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +204,7 @@
 				53733F1F2422666D00B7072D /* FiltersTableViewCell.swift in Sources */,
 				53733F1C24225AA900B7072D /* FiltersViewController.swift in Sources */,
 				53733F21242267C000B7072D /* ViewCode.swift in Sources */,
+				53861B0E242412B500B7BA25 /* CustomViewFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

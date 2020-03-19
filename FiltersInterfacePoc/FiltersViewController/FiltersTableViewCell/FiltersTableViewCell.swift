@@ -18,10 +18,8 @@ final class FiltersTableViewCell: UITableViewCell {
     
     // MARK: - UI Components
     private lazy var collectionView: UICollectionView = {
-        let collectionViewLayout = UICollectionViewFlowLayout()
+        let collectionViewLayout = CustomViewFlowLayout()
             collectionViewLayout.scrollDirection = .vertical
-            collectionViewLayout.minimumInteritemSpacing = minimumSpacing
-            collectionViewLayout.minimumLineSpacing = minimumSpacing
             collectionViewLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout)
@@ -30,6 +28,7 @@ final class FiltersTableViewCell: UITableViewCell {
             collectionView.dataSource = self
             collectionView.backgroundColor = .clear
             collectionView.isScrollEnabled = false
+            collectionView.contentInsetAdjustmentBehavior = .always
 
         return collectionView
     }()
