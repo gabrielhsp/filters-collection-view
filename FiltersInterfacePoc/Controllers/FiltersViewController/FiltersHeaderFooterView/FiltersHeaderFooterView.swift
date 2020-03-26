@@ -13,7 +13,7 @@ final class FiltersHeaderFooterView: UIView {
         let label = UILabel(frame: .zero)
         
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.boldSystemFont(ofSize: 14)
+        label.font = UIFont.boldSystemFont(ofSize: 16)
         
         return label
     }()

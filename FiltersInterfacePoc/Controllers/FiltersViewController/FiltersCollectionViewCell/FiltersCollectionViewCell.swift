@@ -14,7 +14,7 @@ final class FiltersCollectionViewCell: UICollectionViewCell {
         let label = UILabel(frame: .zero)
         
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 10)
+        label.font = UIFont.systemFont(ofSize: 14)
         label.textColor = .blue
         
         return label

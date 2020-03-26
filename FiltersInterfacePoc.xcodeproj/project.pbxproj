@@ -19,6 +19,8 @@
 		53733F242422979400B7072D /* FiltersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53733F232422979400B7072D /* FiltersCollectionViewCell.swift */; };
 		53733F272422B1EF00B7072D /* FiltersHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53733F262422B1EF00B7072D /* FiltersHeaderFooterView.swift */; };
 		53861B0E242412B500B7BA25 /* CustomViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53861B0D242412B500B7BA25 /* CustomViewFlowLayout.swift */; };
+		539AF593242D408600431663 /* FiltersSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539AF592242D408600431663 /* FiltersSheetViewController.swift */; };
+		539AF59C242D52B700431663 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539AF59B242D52B700431663 /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		53733F232422979400B7072D /* FiltersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersCollectionViewCell.swift; sourceTree = "<group>"; };
 		53733F262422B1EF00B7072D /* FiltersHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersHeaderFooterView.swift; sourceTree = "<group>"; };
 		53861B0D242412B500B7BA25 /* CustomViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewFlowLayout.swift; sourceTree = "<group>"; };
+		539AF592242D408600431663 /* FiltersSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersSheetViewController.swift; sourceTree = "<group>"; };
+		539AF59B242D52B700431663 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,16 +72,15 @@
 		53733F052422597000B7072D /* FiltersInterfacePoc */ = {
 			isa = PBXGroup;
 			children = (
+				539AF59A242D52A800431663 /* Extensions */,
+				539AF596242D4A3300431663 /* Protocols */,
 				53861B0C242412A900B7BA25 /* Helpers */,
-				53733F1A24225A9100B7072D /* FiltersViewController */,
+				539AF595242D4A2600431663 /* Controllers */,
+				539AF597242D4A4700431663 /* Storyboard */,
+				539AF599242D4A7B00431663 /* Assets */,
 				53733F062422597000B7072D /* AppDelegate.swift */,
 				53733F082422597000B7072D /* SceneDelegate.swift */,
-				53733F0A2422597000B7072D /* ViewController.swift */,
-				53733F0C2422597000B7072D /* Main.storyboard */,
-				53733F0F2422597200B7072D /* Assets.xcassets */,
-				53733F112422597200B7072D /* LaunchScreen.storyboard */,
 				53733F142422597200B7072D /* Info.plist */,
-				53733F20242267C000B7072D /* ViewCode.swift */,
 			);
 			path = FiltersInterfacePoc;
 			sourceTree = "<group>";
@@ -123,6 +126,57 @@
 				53861B0D242412B500B7BA25 /* CustomViewFlowLayout.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		539AF594242D4A1800431663 /* FiltersSheetViewController */ = {
+			isa = PBXGroup;
+			children = (
+				539AF592242D408600431663 /* FiltersSheetViewController.swift */,
+			);
+			path = FiltersSheetViewController;
+			sourceTree = "<group>";
+		};
+		539AF595242D4A2600431663 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				53733F1A24225A9100B7072D /* FiltersViewController */,
+				539AF594242D4A1800431663 /* FiltersSheetViewController */,
+				53733F0A2422597000B7072D /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		539AF596242D4A3300431663 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				53733F20242267C000B7072D /* ViewCode.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		539AF597242D4A4700431663 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				53733F0C2422597000B7072D /* Main.storyboard */,
+				53733F112422597200B7072D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		539AF599242D4A7B00431663 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				53733F0F2422597200B7072D /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		539AF59A242D52A800431663 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				539AF59B242D52B700431663 /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +256,8 @@
 				53733F092422597000B7072D /* SceneDelegate.swift in Sources */,
 				53733F272422B1EF00B7072D /* FiltersHeaderFooterView.swift in Sources */,
 				53733F1F2422666D00B7072D /* FiltersTableViewCell.swift in Sources */,
+				539AF59C242D52B700431663 /* UIViewController+Extensions.swift in Sources */,
+				539AF593242D408600431663 /* FiltersSheetViewController.swift in Sources */,
 				53733F1C24225AA900B7072D /* FiltersViewController.swift in Sources */,
 				53733F21242267C000B7072D /* ViewCode.swift in Sources */,
 				53861B0E242412B500B7BA25 /* CustomViewFlowLayout.swift in Sources */,
@@ -349,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66KVYMKMC7;
 				INFOPLIST_FILE = FiltersInterfacePoc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -366,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66KVYMKMC7;
 				INFOPLIST_FILE = FiltersInterfacePoc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
