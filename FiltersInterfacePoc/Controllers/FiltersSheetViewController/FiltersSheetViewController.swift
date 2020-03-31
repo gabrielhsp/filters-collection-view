@@ -86,7 +86,13 @@ final class FiltersSheetViewController: UIViewController {
             }
             
             self.filtersContainerHeightConstraint.isActive = false
-            self.view.removeFromSuperview()
+            self.view.alpha = 1
+            UIView.transition(with: self.view, duration: self.animationDurationTime/2, options: [.transitionCrossDissolve], animations: {
+            self.view.alpha = 0
+            }, completion: { (_) in
+                self.view.removeFromSuperview()
+                self.view.alpha = 1
+            })
         }
     }
     
